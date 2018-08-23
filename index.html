@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What a Trip | Wellcome</title>
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
             <nav>
                 <div id="nav-left">
                     <ul>
-                       <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                       <li class="current" id="home"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
                        <li><a href="#">Travel</a></li>
                        <li><a href="#">Lifestyle</a></li>
                        <li><a href="#">Country</a></li>
@@ -32,7 +32,7 @@
                         <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-                        <li><a href="#">search <i class="fa fa-search"></i></a></li>
+                        <li><a href="#">search<i class="fa fa-search" id="icon-search"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -40,11 +40,16 @@
             <section id="showcase">
                 <div class="container">
                     <div id="branding">
-
+                        <h1>What a Trip</h1>
+                        <p>Enjoy the freedom!</p>
                     </div>
-                    <iframe src="https://www.youtube.com/embed/TknrmpS4GOg?rel=0&amp;controls=0&amp&autoplay=1&loop=1&mute=1;showinfo=0&amp;start=5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/gfl4ZJFbxkE?rel=0&amp;controls=0&amp&autoplay=1&loop=1&mute=1;showinfo=0&amp;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
+
+
         </div>
     </header>
 
