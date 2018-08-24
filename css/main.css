@@ -1,31 +1,173 @@
+/* Global */
 * {
     padding: 0;
     margin: 0;
     border: 0;
-
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
 .container {
     overflow: hidden;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
 
+li {
+    display: inline;
+}
 
+a, a:hover {
+    text-decoration-line: none;
+}
 
+/* Header */
+header {
+    background-color: #272838;
+    color: rgba(243, 222, 138, 0.6);
+}
 
-/* #showcase .video-wrapper {
+header nav {
+    overflow: hidden;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+header #nav-left {
+    float: left;
+}
+header #nav-right {
+    float: right;
+}
+
+header ul {
+    margin: auto;
+}
+
+header #nav-left li {
+    padding: 18px;
+}
+
+header #nav-right li {
+    padding: 5px;
+}
+
+header #nav-right li:last-child {
+    margin-right: 0;
+}
+
+header #nav-right li:last-child a {
+    margin-left: 15px;
+    padding-left: 5px;
+}
+
+header a {
+    text-transform: uppercase;
+    color: rgba(243, 222, 138, 0.6);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(243, 222, 138);
+}
+
+header .current {
+    background-color: rgba(243, 222, 138, 0.6);
+}
+
+header #home {
+    margin-right: 15px;
+}
+
+header #home:hover {
+    background-color: rgb(243, 222, 138);
+}
+
+header span {
+    color: #272838;
+    font-size: 12px;
+}
+
+header #nav-right i {
+    font-size: 14px;
+}
+
+header #icon-search {
+    margin-left: 10px;
+}
+
+/* Showcase */
+#showcase {
+    text-align: center;
+}
+
+#showcase #branding {
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 150px 450px;
+    color: #ffffff;
+    cursor: pointer;
+    /* background: linear-gradient(to right, violet, blue); */
+    /* border: 10px solid rgba(243, 222, 138, 0.6);
+    border-radius: 50px; */
+}
+
+#showcase #branding img {
+    height: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#showcase #branding h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-top: 2px solid rgba(243, 222, 138, 0.6);
+}
+
+#showcase #slogan {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    display: inline;
+    border: 2px solid rgba(243, 222, 138, 0.6);
+    /* border-radius: 20px; */
+}
+
+#showcase #since {
+    font-size: 10px;
+    color: rgba(243, 222, 138, 0.6);
+    margin-top: 12px;
+    font-weight: bolder;
+}
+
+#showcase .video-wrapper {
     position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
 
 #showcase iframe {
     position: absolute;
-    top: 0;
+    top: -30%;
     left: 0;
     width: 100%;
-    height: 110%;
+    height: 100%;
     pointer-events: none;
-} */
+}
