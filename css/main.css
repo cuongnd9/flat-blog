@@ -31,7 +31,7 @@ a, a:hover {
 
 /* Header */
 header {
-    background-color: #272838;
+    background-color: #352B2F;
     color: rgba(243, 222, 138, 0.6);
 }
 
@@ -93,7 +93,7 @@ header #home:hover {
 }
 
 header span {
-    color: #272838;
+    color: #352B2F;
     font-size: 12px;
 }
 
@@ -118,7 +118,7 @@ header #icon-search {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: 150px 450px;
+    margin: 140px 450px;
     color: #ffffff;
     cursor: pointer;
     /* background: linear-gradient(to right, violet, blue); */
@@ -161,13 +161,92 @@ header #icon-search {
 	padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    margin-top: -20%;
 }
 
 #showcase iframe {
     position: absolute;
-    top: -30%;
+    /* top: -30%; */
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+/* Main Content */
+#main-content {
+    background-color: #211D1E;
+}
+
+#main-content article {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+}
+
+#main-content #column-1 {
+    float: left;
+    margin: 30px 25px 25px 40px;
+}
+
+#main-content #column-2 {
+    float: right;
+    margin: 30px 25px 25px 25px;
+}
+
+#main-content aside {
+    float: right;
+    width: 25%;
+}
+
+#main-content .content-cover {
+    width: 400px;
+    margin-bottom: 25px;
+}
+
+
+
+
+#main-content #introduce {
+    margin: 30px 40px 25px 25px;
+}
+
+#main-content #intro-cover {
+    width: 100%;
+}
+
+#main-content #intro-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+}
+
+/* Follow */
+#follow {
+    background-color: #211D1E;
+}
+
+#follow h2 {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #352B2F;
+}
+
+footer p, footer a {
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    color: rgba(256, 256, 256, 0.6);
+    font-size: 15px;
+}
+
+footer a {
+    color: rgba(243, 222, 138, 0.6);
+}
+
+footer a:hover {
+    color: rgb(243, 222, 138);
 }
