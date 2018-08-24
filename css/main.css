@@ -6,15 +6,14 @@
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .container {
     overflow: hidden;
     width: 100%;
-    margin: auto;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 ul {
@@ -25,7 +24,7 @@ li {
     display: inline;
 }
 
-a, a:hover {
+a, a:hover, a:active {
     text-decoration-line: none;
 }
 
@@ -44,6 +43,7 @@ header nav {
 header #nav-left {
     float: left;
 }
+
 header #nav-right {
     float: right;
 }
@@ -60,6 +60,14 @@ header #nav-right li {
     padding: 5px;
 }
 
+header #nav-right a {
+    color: #D4A35C;
+}
+
+header #nav-right a:hover {
+    color: rgba(243, 222, 138, 0.6);
+}
+
 header #nav-right li:last-child {
     margin-right: 0;
 }
@@ -67,6 +75,11 @@ header #nav-right li:last-child {
 header #nav-right li:last-child a {
     margin-left: 15px;
     padding-left: 5px;
+    color: rgba(243, 222, 138, 0.6);
+}
+
+header #nav-right li:last-child i {
+    color: #D4A35C;
 }
 
 header a {
@@ -77,11 +90,11 @@ header a {
 }
 
 header a:hover {
-    color: rgb(243, 222, 138);
+    color: #D4A35C;
 }
 
 header .current {
-    background-color: rgba(243, 222, 138, 0.6);
+    background-color: #D4A35C;
 }
 
 header #home {
@@ -89,7 +102,7 @@ header #home {
 }
 
 header #home:hover {
-    background-color: rgb(243, 222, 138);
+    background-color: #D4A35C;
 }
 
 header span {
@@ -180,35 +193,102 @@ header #icon-search {
 
 #main-content article {
     float: left;
-    width: 75%;
+    width: 70%;
     overflow: hidden;
+    margin: 0;
 }
 
 #main-content #column-1 {
     float: left;
-    margin: 30px 25px 25px 40px;
+    width: 50%;
+    padding: 40px 0px 25px 50px;
 }
 
 #main-content #column-2 {
     float: right;
-    margin: 30px 25px 25px 25px;
+    width: 50%;
+    padding: 40px 25px 25px 25px;
 }
 
 #main-content aside {
     float: right;
-    width: 25%;
+    width: 30%;
 }
 
+/* Main Content | Article */
 #main-content .content-cover {
-    width: 400px;
+    width: 100%;
     margin-bottom: 25px;
 }
 
+#main-content .content {
+    text-align: center;
+    color: rgba(243, 222, 138, 0.6);
+    background-color: #352C2F;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+}
 
+#main-content .content h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1.5px solid #D4A35C;
+    display: inline;
+    padding: 5px;
+    letter-spacing: 5px;
+}
 
+#main-content .content h3 a {
+    color: rgba(243, 222, 138, 0.6);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
 
+#main-content .content h3 a:hover {
+    color: #D4A35C;
+}
+
+#main-content .content .author {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#main-content .content .author a ,
+#main-content .content .author a:hover {
+    color: #D4A35C;
+    font-size: 14px;
+}
+
+#main-content .content .short-content {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+#main-content .content > a {
+    color: rgba(243, 222, 138, 0.6);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main-content .content > a:hover {
+    color: #D4A35C;
+}
+
+#main-content .content > a i {
+    font-size: 11px;
+}
+
+/*Main Content | Introduce */
 #main-content #introduce {
-    margin: 30px 40px 25px 25px;
+    margin: 40px 50px 25px 0px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    color: #D4A35C;
+    background-color: #352C2F;
+    padding-bottom: 20px;
 }
 
 #main-content #intro-cover {
@@ -219,15 +299,105 @@ header #icon-search {
     width: 120px;
     height: 120px;
     border-radius: 200px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#main-content #introduce h3 {
+    margin-top: 85px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgba(243, 222, 138, 0.6);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#main-content #intro-content {
+    color: rgba(243, 222, 138, 0.6);
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#main-content #introduce i {
+    color:#D4A35C;
+    font-size: 14px;
+}
+
+#main-content #introduce li {
+    padding: 5px;
+}
+
+#main-content #introduce i:hover {
+    color: rgba(243, 222, 138, 0.6);
+}
+
+/*Main Content | Other Intro */
+#main-content #other-intro {
+    background-color: #352C2F;
+    color: rgba(243, 222, 138, 0.6);
+    margin: 40px 50px 25px 0px;
+    text-align: left;
+    font-size: 15px;
+    padding: 25px 50px;;
+}
+
+#main-content #other-intro a {
+    color: rgba(243, 222, 138, 0.6);
+}
+
+#main-content #other-intro a:hover {
+    color: #D4A35C;
+}
+
+#main-content #other-intro hr {
+    border-top: 0.5px solid rgba(243, 222, 138, 0.6);
+    margin: 0;
+    padding: 5px 0;
+}
+
+#main-content #other-intro p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#main-content #other-intro .intro-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    color: #D4A35C;
+}
+
+#main-content #other-intro h3 {
+    font-style: italic;
+    border-left: 3px solid rgba(243, 222, 138, 0.6);
+    padding-left: 15px;
 }
 
 /* Follow */
 #follow {
     background-color: #211D1E;
+    text-align: center;
+    color: rgba(243, 222, 138, 0.6);
+
 }
 
-#follow h2 {
+#follow h4 {
     margin: 0;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+#follow a {
+    font-size: 12px;
+    color: #D4A35C;
+}
+
+#follow a:hover {
+    color: #D4A35C;
 }
 
 /* Footer */
@@ -239,14 +409,14 @@ footer p, footer a {
     margin: auto;
     padding: 15px 0;
     text-align: center;
-    color: rgba(256, 256, 256, 0.6);
+    color: rgba(243, 222, 138, 0.6);
     font-size: 15px;
 }
 
 footer a {
-    color: rgba(243, 222, 138, 0.6);
+    color: #D4A35C;
 }
 
 footer a:hover {
-    color: rgb(243, 222, 138);
+    color: #D4A35C;
 }
