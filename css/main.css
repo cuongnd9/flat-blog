@@ -49,11 +49,11 @@ header #nav-right {
 }
 
 header ul {
-    margin: auto;
+    margin: 0;
 }
 
 header #nav-left li {
-    padding: 18px;
+    padding: 22px;
 }
 
 header #nav-right li {
@@ -191,6 +191,10 @@ header #icon-search {
     background-color: #211D1E;
 }
 
+#main-content .container {
+    position: relative;
+}
+
 #main-content article {
     float: left;
     width: 70%;
@@ -213,6 +217,8 @@ header #icon-search {
 #main-content aside {
     float: right;
     width: 30%;
+    position: absolute;
+    right: 0px;
 }
 
 /* Main Content | Article */
@@ -278,6 +284,48 @@ header #icon-search {
 
 #main-content .content > a i {
     font-size: 11px;
+}
+
+/* Main Content | Page Number */
+#page-number {
+    float: left;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+#page-number li {
+    margin: 0 2px;
+}
+
+#page-number li a{
+    padding: 12px 15px;
+    background-color: #392F32;
+}
+
+#page-number a {
+    color: rgba(243, 222, 138, 0.6);
+}
+
+#page-number a:hover {
+    color: #392F32;
+    background-color: #D4A35C;
+}
+
+#page-number a > i {
+    font-size: 15px;
+}
+
+#page-number .page-current {
+    color: #392F32;
+    background-color: #D4A35C;
+}
+
+#page-number .page-disable,
+#page-number .page-disable:hover {
+    background-color: rgba(57, 47, 50, 0.1);
+    color: rgba(243, 222, 138, 0.6);
 }
 
 /*Main Content | Introduce */
