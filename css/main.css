@@ -53,7 +53,7 @@ header ul {
 }
 
 header #nav-left li {
-    padding: 22px;
+    padding: 20.5px;
 }
 
 header #nav-right li {
@@ -110,6 +110,10 @@ header span {
     font-size: 12px;
 }
 
+header #menu-button {
+    display: none;
+}
+
 header #nav-right i {
     font-size: 14px;
 }
@@ -132,7 +136,7 @@ header #icon-search {
     position: absolute;
     top: 99%;
     left: 0;
-    background: #272223;
+    background: #392F32;
     z-index: 10;
     min-width: 140px;
     padding: 12px 0;
@@ -141,11 +145,6 @@ header #icon-search {
 .dropdown-content a {
     display: block;
     padding: 10px 22px;
-    color: #D4A35C;
-}
-
-.dropdown-content a:hover {
-    color: rgba(243, 222, 138, 0.6);
 }
 
 .dropdown:hover .dropdown-content {
@@ -157,38 +156,40 @@ header #icon-search {
     text-align: center;
 }
 
+#showcase .container {
+    position: relative;
+    vertical-align: middle;
+}
+
 #showcase #branding {
     text-transform: uppercase;
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 20%;
     left: 0;
     bottom: 0;
     right: 0;
-    margin: 140px 450px;
+    /* margin: 140px 450px; */
+    /* margin: auto; */
     color: #ffffff;
     cursor: pointer;
-    /* background: linear-gradient(to right, violet, blue); */
-    /* border: 10px solid rgba(243, 222, 138, 0.6);
-    border-radius: 50px; */
 }
 
 #showcase #branding img {
-    height: 80px;
-    padding-right: 10px;
-    padding-left: 10px;
+    height: 45px;
+    padding: 0 10px 10px 10px;
+    border-bottom: 2px solid rgba(243, 222, 138, 0.6);
 }
 
 #showcase #branding h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 15px;
-    border-top: 2px solid rgba(243, 222, 138, 0.6);
 }
 
 #showcase #slogan {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     padding: 8px;
     display: inline;
@@ -201,6 +202,7 @@ header #icon-search {
     color: rgba(243, 222, 138, 0.6);
     margin-top: 12px;
     font-weight: bolder;
+    padding-bottom: 0;
 }
 
 #showcase .video-wrapper {
@@ -503,6 +505,117 @@ footer a:hover {
 }
 
 /* Media */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    #nav-right,
+    #nav-left ul {
+      display: none;
+    }
+
+    header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #nav-left {
+        margin: 0;
+    }
     
+    a#menu-button {
+        display: inline;
+        padding-left: 13px;
+    }
+
+    a#menu-button i {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    #nav-left:hover ul {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        min-width: 140px;
+        background-color: #3A2D32;
+    }
+
+    #nav-left:hover ul li {
+        display: block;
+        padding: 10px 22px;
+    }
+
+    #nav-left:hover ul li#home {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    #nav-left:hover ul li:first-child {
+        /* padding-top: 20px; */
+        margin: 0;
+    }
+
+    #nav-left:hover ul li:last-child {
+        padding-bottom: 20px;
+    }
+
+    #nav-left:hover ul li.dropdown .dropdown-content {
+        left: 100%;
+        top: -15%;
+    }
+
+    article,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+    #showcase #branding {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #showcase #branding img {
+        height: 25px;
+        padding-right: 8px;
+        padding-left: 8px;
+        border-bottom: 1px solid rgba(243, 222, 138, 0.6);
+    }
+    
+    #showcase #branding h1 {
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    #showcase #slogan {
+        font-size: 8px;
+        padding: 5px;
+        margin: 0;
+        border: 1px solid rgba(243, 222, 138, 0.6);
+    }
+    
+    #showcase #since {
+        font-size: 8px;
+        margin-top: 0px;
+    }
+    
+    #showcase .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin-top: -10%;
+    }
+    
+    #showcase iframe {
+        position: absolute;
+        /* top: -30%; */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
 }
