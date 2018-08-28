@@ -82,6 +82,10 @@ header #nav-right li:last-child i {
     color: #D4A35C;
 }
 
+header #nav-right li:last-child span {
+    color: rgba(243, 222, 138, 0.6);
+}
+
 header a {
     text-transform: uppercase;
     color: rgba(243, 222, 138, 0.6);
@@ -118,7 +122,7 @@ header #nav-right i {
     font-size: 14px;
 }
 
-header #icon-search {
+header #search i {
     margin-left: 10px;
 }
 
@@ -506,7 +510,7 @@ footer a:hover {
 
 /* Media */
 @media screen and (max-width: 768px) {
-    #nav-right,
+    #nav-right ul li:not(#search),
     #nav-left ul {
       display: none;
     }
@@ -516,6 +520,7 @@ footer a:hover {
         margin-bottom: 0;
     }
 
+    /* nav-left */
     #nav-left {
         margin: 0;
     }
@@ -562,6 +567,22 @@ footer a:hover {
         left: 100%;
         top: -15%;
     }
+
+    /* nav-right */
+    #nav-right {
+        margin-right: 13px;
+    }
+
+    #search span {
+        visibility: hidden;
+    }
+
+    #nav-right li#search i {
+        color: rgba(243, 222, 138, 0.6);
+    }
+
+
+
 
     article,
     aside {
