@@ -173,8 +173,6 @@ header #search i {
     left: 0;
     bottom: 0;
     right: 0;
-    /* margin: 140px 450px; */
-    /* margin: auto; */
     color: #ffffff;
     cursor: pointer;
 }
@@ -198,7 +196,6 @@ header #search i {
     padding: 8px;
     display: inline;
     border: 2px solid rgba(243, 222, 138, 0.6);
-    /* border-radius: 20px; */
 }
 
 #showcase #since {
@@ -219,7 +216,6 @@ header #search i {
 
 #showcase iframe {
     position: absolute;
-    /* top: -30%; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -427,7 +423,7 @@ header #search i {
     margin: 40px 50px 25px 0px;
     text-align: left;
     font-size: 15px;
-    padding: 25px 50px;;
+    padding: 25px 50px;
 }
 
 #main-content #other-intro a {
@@ -510,6 +506,7 @@ footer a:hover {
 
 /* Media */
 @media screen and (max-width: 768px) {
+    /* Header */
     #nav-right ul li:not(#search),
     #nav-left ul {
       display: none;
@@ -555,7 +552,6 @@ footer a:hover {
     }
 
     #nav-left:hover ul li:first-child {
-        /* padding-top: 20px; */
         margin: 0;
     }
 
@@ -581,15 +577,7 @@ footer a:hover {
         color: rgba(243, 222, 138, 0.6);
     }
 
-
-
-
-    article,
-    aside {
-        float: none;
-        width: 100%;
-    }
-
+    /* Showcase */
     #showcase #branding {
         position: absolute;
         top: 5%;
@@ -633,10 +621,49 @@ footer a:hover {
     
     #showcase iframe {
         position: absolute;
-        /* top: -30%; */
         left: 0;
         width: 100%;
         height: 100%;
-        pointer-events: none;
+    }
+
+    /* Main Content */
+    #main-content article,
+    #main-content #page-number,
+    #main-content aside {
+        float: none;
+        width: 100%;
+        position: static;
+    }
+
+    #main-content #column-1 {
+        padding: 25px 10px 15px 20px;
+    }
+    
+    #main-content #column-2 {
+        padding: 25px 20px 15px 10px;
+    }
+
+    #main-content .content {
+        margin-bottom: 15px;
+    }
+
+    #main-content #page-number {
+        margin-bottom: 0;
+    }
+
+    #main-content #introduce {
+        margin: 30px 20px 30px 20px;
+    }
+
+    #main-content #intro-cover {
+        height: 250px;
+    }
+    
+    #main-content #intro-avatar {
+        top: 27%;
+    }
+    
+    #main-content #other-intro {
+        margin: 0px 20px 30px 20px;
     }
 }
