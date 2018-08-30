@@ -538,37 +538,17 @@ footer a:hover {
         padding: 8px;
     }
 
-    /* #nav-left:hover ul {
+    /* .dropdown-content */
+    .dropdown-content {
         display: block;
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        min-width: 140px;
-        background-color: #3A2D32;
+        position: static;
+        padding: 0;
     }
 
-    #nav-left:hover ul li {
+    .dropdown-content a {
         display: block;
-        padding: 10px 22px;
+        padding: 1px 22px;
     }
-
-    #nav-left:hover ul li#home {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-
-    #nav-left:hover ul li:first-child {
-        margin: 0;
-    }
-
-    #nav-left:hover ul li:last-child {
-        padding-bottom: 20px;
-    }
-
-    #nav-left:hover ul li.dropdown .dropdown-content {
-        left: 100%;
-        top: -15%;
-    } */
 
     /* nav-right */
     #nav-right {
